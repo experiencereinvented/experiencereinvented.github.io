@@ -52,6 +52,7 @@ code .
 ```
 www/
 ├── index.html          # Main website file
+├── CNAME              # GitHub Pages custom domain configuration
 ├── style.css          # Styling (if not using CDN)
 ├── script.js          # JavaScript (if needed)
 ├── prd.md             # Product Requirements Document
@@ -75,13 +76,20 @@ This project is designed to be hosted on GitHub Pages within the `experiencerein
 
 1. Push changes to the main branch
 2. GitHub Pages will automatically serve the site
-3. Domain will be configured to point to `www.experiencereinvented.com`
+3. Custom domain `www.experiencereinvented.com` is configured via the `CNAME` file
+4. Ensure your DNS provider has a CNAME record pointing `www.experiencereinvented.com` to `[your-github-username].github.io` or `experiencereinvented.github.io`
+
+#### DNS Configuration Required:
+- **Type**: CNAME
+- **Name**: www
+- **Value**: experiencereinvented.github.io (or your specific GitHub Pages URL)
+- **TTL**: 300-3600 seconds (5 minutes to 1 hour)
 
 ## 📧 Contact
 
 This project is not currently offering commercial services. For questions about research goals or partnership discussions:
 
-**Email:** [jack.jin@experiencereinvented.com](mailto:jack.jin@experiencereinvented.com)
+**Email:** [admin@experiencereinvented.com](mailto:admin@experiencereinvented.com)
 
 ## ⚖️ Legal Notes
 

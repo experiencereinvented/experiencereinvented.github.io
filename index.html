@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience Reinvented - Adobe Partnership Research Portal. Temporary AI + Adobe exploration focused on AEM, AI Agents, and Adobe Site Optimizer during research phase.">
+    <meta name="keywords" content="Adobe, AEM, AI Agents, Site Optimizer, Research, Exploration, Partnership">
+    <meta name="author" content="Experience Reinvented">
+    <link rel="canonical" href="https://www.experiencereinvented.com/">
+    <title>Experience Reinvented - Adobe Partnership Research Portal</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Gradient Background Component */
+        .gradient-background {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to right, #FFB199, #E1251B, #8000FF);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content Sections */
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #f8f9fa;
+        }
+
+        .about-text {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Exploration Areas */
+        .exploration-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .exploration-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border: 1px solid #e9ecef;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .exploration-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        .exploration-card h3 {
+            color: #E1251B;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .exploration-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* SDK Section */
+        .sdk-section {
+            background-color: #f8f9fa;
+        }
+
+        .sdk-content {
+            text-align: center;
+        }
+
+        .sdk-highlight {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 4px solid #8000FF;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact-box {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem auto;
+            max-width: 600px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-email {
+            color: #FFB199;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .contact-email:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #1a1a1a;
+            color: #888;
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section {
+                padding: 3rem 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .exploration-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section with Gradient Background -->
+    <section class="gradient-background">
+        <div class="hero">
+            <h1>Experience Reinvented</h1>
+            <p class="subtitle">Adobe Partnership Research Portal<br>Temporary AI + Adobe Exploration</p>
+        </div>
+    </section>
+
+    <!-- About This Project -->
+    <section class="section about">
+        <div class="container">
+            <h2 class="section-title">About This Project</h2>
+            <div class="section-content">
+                <div class="about-text">
+                    <p>Experience Reinvented is a <strong>temporary, non-commercial exploration</strong> currently in progress within the Adobe ecosystem. This site serves as a reference point during our time-limited research phase exploring Adobe technologies and AI integration possibilities.</p>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3>Current Research Focus</h3>
+                    <p>We are not pursuing clients or commercial engagements during this exploratory period. Our current objective is <strong>exploratory research and partnership licensing</strong> for Adobe SDKs, with a particular emphasis on AEMaaCS and AI-driven workflows.</p>
+                </div>
+
+                <div class="about-text">
+                    <p><strong>Important:</strong> This exploration does not intend to compete with any existing Adobe partners and is not actively seeking customers or offering commercial services at this time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exploration Areas -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Exploration Areas</h2>
+            <div class="exploration-grid">
+                <div class="exploration-card">
+                    <h3>Adobe Experience Manager (AEM)</h3>
+                    <p>Investigating content management capabilities, headless architecture patterns, and integration opportunities with modern development workflows.</p>
+                </div>
+                <div class="exploration-card">
+                    <h3>Adobe Site Optimizer</h3>
+                    <p>Exploring optimization strategies, performance enhancement techniques, and automated testing methodologies for digital experiences.</p>
+                </div>
+                <div class="exploration-card">
+                    <h3>AI Agents & Autonomous Workflows</h3>
+                    <p>Researching the intersection of artificial intelligence and content management, focusing on automated decision-making and workflow optimization.</p>
+                </div>
+                <div class="exploration-card">
+                    <h3>Generative AI Integrations</h3>
+                    <p>Examining how generative AI technologies can enhance content creation, personalization, and user experience within Adobe's ecosystem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adobe Partner SDK Access -->
+    <section class="section sdk-section">
+        <div class="container">
+            <h2 class="section-title">Adobe Partner SDK Access</h2>
+            <div class="section-content sdk-content">
+                <p>As part of our current research exploration, we are working to establish appropriate access to Adobe SDKs through the research partnership track during this phase.</p>
+                
+                <div class="sdk-highlight">
+                    <h3>Current Focus: AEMaaCS</h3>
+                    <p>Our exploration currently emphasizes Adobe Experience Manager as a Cloud Service (AEMaaCS), examining its capabilities for modern content delivery, headless architecture implementation, and AI-enhanced content management workflows during this research period.</p>
+                </div>
+
+                <p>SDK access is being explored strictly for research, development, and partnership evaluation purposes during this exploratory phase, in alignment with Adobe's partner program guidelines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-box">
+                <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">
+                    This exploration is not currently offering commercial services. For questions about research goals or partnership discussions during this exploratory phase, please contact:
+                </p>
+                <p>
+                    📧 <a href="mailto:admin@experiencereinvented.com" class="contact-email">admin@experiencereinvented.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Experience Reinvented. This site is not affiliated with or endorsed by Adobe Inc.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">
+                All references to Adobe products are for research and exploration purposes only. This project does not seek to compete with any existing Adobe Solution Partners.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
