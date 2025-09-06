@@ -1,4 +1,4 @@
-<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="250" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Crimson Neural Gradient -->
     <linearGradient id="crimsonNeuralGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -9,8 +9,8 @@
   </defs>
   
   <!-- Logo Text -->
-  <text x="50" y="230" font-family="Arial, sans-serif" font-size="140" font-weight="bold" fill="url(#crimsonNeuralGradient)">xpri.ai</text>
+  <text x="50" y="140" font-family="Arial, sans-serif" font-size="140" font-weight="bold" fill="url(#crimsonNeuralGradient)">xpri.ai</text>
   
   <!-- Tagline -->
-  <text x="50" y="290" font-family="Arial, sans-serif" font-size="39" font-weight="normal" fill="#333333">Experience Reinvented</text>
+  <text x="50" y="200" font-family="Arial, sans-serif" font-size="39" font-weight="normal" fill="#333333">Experience Reinvented</text>
 </svg>
